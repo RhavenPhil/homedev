@@ -1,0 +1,8 @@
+E:\dev\homedev\DisplayDateTime\DisplayDateTime\DisplayDateTime\bin\Release\DisplayDateTime.exe.config
+E:\dev\homedev\DisplayDateTime\DisplayDateTime\DisplayDateTime\bin\Release\DisplayDateTime.exe
+E:\dev\homedev\DisplayDateTime\DisplayDateTime\DisplayDateTime\bin\Release\DisplayDateTime.pdb
+E:\dev\homedev\DisplayDateTime\DisplayDateTime\DisplayDateTime\obj\Release\DisplayDateTime.Form1.resources
+E:\dev\homedev\DisplayDateTime\DisplayDateTime\DisplayDateTime\obj\Release\DisplayDateTime.Properties.Resources.resources
+E:\dev\homedev\DisplayDateTime\DisplayDateTime\DisplayDateTime\obj\Release\DisplayDateTime.csproj.GenerateResource.Cache
+E:\dev\homedev\DisplayDateTime\DisplayDateTime\DisplayDateTime\obj\Release\DisplayDateTime.exe
+E:\dev\homedev\DisplayDateTime\DisplayDateTime\DisplayDateTime\obj\Release\DisplayDateTime.pdb

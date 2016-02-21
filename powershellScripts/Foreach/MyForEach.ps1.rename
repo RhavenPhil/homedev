@@ -1,0 +1,16 @@
+$csv = Import-Csv "E:\dev\powershellScripts\Foreach\list.csv"
+
+foreach ($line in $csv) 
+{
+    $line.Column1 + " " + $line.Column2 + " " + $line.Surname
+}
+
+
+
+Add-Computer -DomainName <String> -Credential <PSCredential> [-ComputerName <String[]> ] [-Force] [-LocalCredential <PSCredential> ] [-NewName <String> ] [-Options <JoinOptions> ] [-OUPath <String> ] [-PassThru] [-Restart] [-Server <String> ] [-UnjoinDomainCredential <PSCredential> ] [-Unsecure] [-Confirm] [-WhatIf] [ <CommonParameters>]
+
+http://stackoverflow.com/questions/6239647/using-powershell-credentials-without-being-prompted-for-a-password
+http://community.spiceworks.com/scripts/show/2805-powershell-change-computer-name-remotely
+https://technet.microsoft.com/en-us/library/hh849792.aspx
+https://technet.microsoft.com/en-us/library/hh849798.aspx
+http://stackoverflow.com/questions/6217799/rename-computer-and-join-to-domain-in-one-step-with-powershell

@@ -1,0 +1,27 @@
+# Artefacts
+$ODBCViewArtefactSourceFolder = "E:\dev\tmp\ODBC View Server Package\Predix\Vision\"
+$ConfigFiles = $ODBCViewArtefactSourceFolder + "config\*"
+$JarFiles = $ODBCViewArtefactSourceFolder + "jars\*"
+
+# Predix installation folder
+$PredixInstallationFolder = "E:\dev\tmp\Predix\"
+
+# Create destination folders if they don't already exist
+$ConfigInstallationFolder = $PredixInstallationFolder + "ClientTools\Plugins\"
+$JarInstallationFolder = $PredixInstallationFolder + "kernel\dsp\ProficyVision"
+if (!(Test-Path $ConfigInstallationFolder))
+{
+	mkdir $ConfigInstallationFolder
+}
+if (!(Test-Path $JarInstallationFolder))
+{
+	mkdir $JarInstallationFolder
+}
+
+# Copy the artefacts to their appropriate folders - this will overwrite any existing files
+#[string] $JarCopyCommand = "copy " + $JarFolder + $JarFiles + " " + $DriverInstallationFolder
+#[string] $PropertiesCopyCommand = "copy " +  $PropertiesFolder + $PropertiesFileName + " " + $DriverInstallationFolder
+#Invoke-Expression $JarCopyCommand
+#Invoke-Expression $PropertiesCopyCommand
+Copy-Item -Path $ConfigFiles -Include "*.json" -Destination $ConfigInstallationFolder  -Verbose
+Copy-Item -Path $JarFiles -Include "*.jar" -Destination $JarInstallationFolder -Verbose

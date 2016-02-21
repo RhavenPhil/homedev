@@ -1,0 +1,13 @@
+#================================
+# Import any function libraries
+. E:\dev\powershellScripts\FunctionLibraries\Expand-ZIPFile.ps1
+#================================
+
+$ZIPSourceFolder = "E:\dev\tmp\"
+$ZIPDestinationFolder = "E:\dev\tmp\"
+$ZIPArchive = "ODBC View Server Package.zip"
+
+$FullArchiveName = $ZIPSourceFolder+$ZIPArchive
+
+# Extract zip archive containing artefacts
+Expand-ZIPFile –File $FullArchiveName –Destination $ZIPDestinationFolder

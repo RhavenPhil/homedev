@@ -1,0 +1,40 @@
+ECHO Ensure that Predix has been stopped
+@ECHO OFF
+PAUSE
+
+ECHO Extracting ZIP-Archive
+Powershell.exe -executionpolicy unrestricted -File  E:\dev\powershellScripts\InstallProficyODBCViewDriver\ExtractZipPackage.ps1
+
+ECHO Run installer for ODBC Server
+@ECHO OFF
+PAUSE
+
+ECHO Copying ODBC View Server artefacts
+Powershell.exe -executionpolicy unrestricted -File  E:\dev\powershellScripts\InstallProficyODBCViewDriver\InstallProficyODBCViewDriver.ps1
+
+@ECHO OFF
+PAUSE
+
+ECHO Copying ODBC Vision Plugin artefacts
+Powershell.exe -executionpolicy unrestricted -File  E:\dev\powershellScripts\InstallProficyODBCViewDriver\InstallProficyODBCViewPlugin.ps1
+@ECHO OFF
+PAUSE
+
+ECHO Edit Features.XML file, restart Predix and confirm UI feature
+@ECHO OFF
+PAUSE
+
+ECHO Shutdown Predix
+@ECHO OFF
+PAUSE
+
+ECHO Copying ODBC Web Service artefacts
+Powershell.exe -executionpolicy unrestricted -File  E:\dev\powershellScripts\InstallProficyODBCViewDriver\InstallProficyODBCViewWebService.ps1
+
+ECHO Execute the SQL Scripts
+@ECHO OFF
+PAUSE
+
+ECHO Installation complete, start Predix
+@ECHO OFF
+PAUSE

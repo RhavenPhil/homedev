@@ -1,0 +1,5 @@
+E:\dev\ExecuteCommandLineApp\ExecuteCommandLineApp\bin\Release\ExecuteCommandLineApp.exe
+E:\dev\ExecuteCommandLineApp\ExecuteCommandLineApp\bin\Release\ExecuteCommandLineApp.pdb
+E:\dev\ExecuteCommandLineApp\ExecuteCommandLineApp\obj\x86\Release\ExecuteCommandLineApp.exe
+E:\dev\ExecuteCommandLineApp\ExecuteCommandLineApp\obj\x86\Release\ExecuteCommandLineApp.pdb
+E:\dev\ExecuteCommandLineApp\ExecuteCommandLineApp\obj\x86\Release\ExecuteCommandLineApp.csprojResolveAssemblyReference.cache

@@ -1,0 +1,10 @@
+function Expand-ZIPFile($file, $destination)
+{
+	$shell = new-object -com shell.application
+	$zip = $shell.NameSpace($file)
+	foreach($item in $zip.items())
+	{
+		# This will overwrite any contents because of the 0x14 option
+		$shell.Namespace($destination).copyhere($item, 0x14)
+	}
+}

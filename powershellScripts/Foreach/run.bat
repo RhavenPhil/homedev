@@ -1,0 +1,1 @@
+Powershell.exe -executionpolicy unrestricted -File  E:\dev\powershellScripts\ForEach\MyForEach.ps1

@@ -1,0 +1,32 @@
+# Artefacts
+$ODBCDriverArtefactSourceFolder = "E:\dev\tmp\ODBC View Server Package\Interface Provider\Driver\"
+$PropertiesFolder = $ODBCDriverArtefactSourceFolder + "config\"
+$PropertiesFileName = "ProficyODBCViewDriver.properties"
+$JarFiles = $ODBCDriverArtefactSourceFolder + "jars\*"
+
+$FullPropertiesFilePath = $PropertiesFolder+$PropertiesFileName
+#$FullJarFilesPath = $JarFolder+$JarFiles
+$ExcludedJarFiles = "oasql.jar"
+
+# Base installation folder
+$BaseInstallationFolder = "e:\dev\tmp\oaserver72\ip\"
+
+# Create the folders in the oaserver72 folder if they don't already exist
+$DriverInstallationFolder = $BaseInstallationFolder + "oajava\ProficyODBCViewDriver"
+$SchemaInstallationFolder = $BaseInstallationFolder + "schema\ProficyODBCViewDriver"
+if (!(Test-Path $DriverInstallationFolder))
+{
+	mkdir $DriverInstallationFolder
+}
+if (!(Test-Path $SchemaInstallationFolder))
+{
+	mkdir $SchemaInstallationFolder
+}
+
+# Copy the artefacts to their appropriate folders - this will overwrite any existing files
+#[string] $JarCopyCommand = "copy " + $JarFolder + $JarFiles + " " + $DriverInstallationFolder
+#[string] $PropertiesCopyCommand = "copy " +  $PropertiesFolder + $PropertiesFileName + " " + $DriverInstallationFolder
+#Invoke-Expression $JarCopyCommand
+#Invoke-Expression $PropertiesCopyCommand
+Copy-Item -Path $FullPropertiesFilePath -Destination $DriverInstallationFolder -Verbose
+Copy-Item -Path $JarFiles -Include "*.jar" -Destination $DriverInstallationFolder -Exclude $ExcludedJarFiles -Verbose

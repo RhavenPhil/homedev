@@ -1,0 +1,5 @@
+E:\dev\homedev\FirstMSTest\FirstMSTest\bin\Debug\FirstMSTest.pdb
+E:\dev\homedev\FirstMSTest\FirstMSTest\obj\Debug\FirstMSTest.pdb
+E:\dev\homedev\FirstMSTest\FirstMSTest\bin\Debug\FirstMSTest.dll
+E:\dev\homedev\FirstMSTest\FirstMSTest\obj\Debug\FirstMSTest.dll
+E:\dev\homedev\FirstMSTest\FirstMSTest\obj\Debug\FirstMSTest.csprojResolveAssemblyReference.cache

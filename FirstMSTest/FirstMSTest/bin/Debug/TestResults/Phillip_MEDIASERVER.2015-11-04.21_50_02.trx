@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="eedad79e-0890-4580-b298-61939f90577a" name="Phillip@MEDIASERVER 2015-11-04 21:50:02" runUser="MEDIASERVER\Phillip" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="a08fc922-ac1a-4730-abdd-fa4b41f94b3f">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Phillip_MEDIASERVER 2015-11-04 21_50_02" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2015-11-04T21:50:02.8082730+02:00" queuing="2015-11-04T21:50:03.2883346+02:00" start="2015-11-04T21:50:03.4363092+02:00" finish="2015-11-04T21:50:03.8703507+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="firstmstest.dll" id="458c2552-76c1-aba1-2b2a-c38cd5aacd41">
+      <Execution id="31798b17-6345-4e3c-ae17-269d74012255" />
+      <TestMethod codeBase="E:/dev/homedev/FirstMSTest/FirstMSTest/bin/Debug/FirstMSTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FirstMSTest.UnitTest1, FirstMSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TestMethod2" storage="firstmstest.dll" id="44f6cca1-526e-92d4-b595-dda64b7ab3e8">
+      <Execution id="41ca6a70-9b97-4d01-8a01-96a088c7516d" />
+      <TestMethod codeBase="E:/dev/homedev/FirstMSTest/FirstMSTest/bin/Debug/FirstMSTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FirstMSTest.UnitTest1, FirstMSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="458c2552-76c1-aba1-2b2a-c38cd5aacd41" executionId="31798b17-6345-4e3c-ae17-269d74012255" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="44f6cca1-526e-92d4-b595-dda64b7ab3e8" executionId="41ca6a70-9b97-4d01-8a01-96a088c7516d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="31798b17-6345-4e3c-ae17-269d74012255" testId="458c2552-76c1-aba1-2b2a-c38cd5aacd41" testName="TestMethod1" computerName="MEDIASERVER" duration="00:00:00.1031435" startTime="2015-11-04T21:50:03.4843119+02:00" endTime="2015-11-04T21:50:03.8163307+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31798b17-6345-4e3c-ae17-269d74012255">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. </Message>
+          <StackTrace>   at FirstMSTest.UnitTest1.TestMethod1() in e:\dev\homedev\FirstMSTest\FirstMSTest\UnitTest1.cs:line 15
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="41ca6a70-9b97-4d01-8a01-96a088c7516d" testId="44f6cca1-526e-92d4-b595-dda64b7ab3e8" testName="TestMethod2" computerName="MEDIASERVER" duration="00:00:00.0001532" startTime="2015-11-04T21:50:03.8173604+02:00" endTime="2015-11-04T21:50:03.8193633+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41ca6a70-9b97-4d01-8a01-96a088c7516d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

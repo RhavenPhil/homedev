@@ -1,0 +1,4 @@
+E:\dev\ExecuteCommandLineApp\ExecuteCommandLineApp\bin\Debug\ExecuteCommandLineApp.exe
+E:\dev\ExecuteCommandLineApp\ExecuteCommandLineApp\bin\Debug\ExecuteCommandLineApp.pdb
+E:\dev\ExecuteCommandLineApp\ExecuteCommandLineApp\obj\x86\Debug\ExecuteCommandLineApp.exe
+E:\dev\ExecuteCommandLineApp\ExecuteCommandLineApp\obj\x86\Debug\ExecuteCommandLineApp.pdb
